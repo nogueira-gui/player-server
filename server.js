@@ -5,6 +5,7 @@ const express = require('express')
     , getStat = require('util').promisify(fs.stat);
 
 app.use(express.static('public'));
+const PORT = process.env.PORT || 3000;
 
 //O metodo deve ser assincrono
 app.get('/audio', async (req, res) => {
@@ -31,4 +32,4 @@ app.get('/audio', async (req, res) => {
 
 });
 
-app.listen(3000, () => console.log('app is running'));
+app.listen(PORT, () => console.log(`app is running | port : ${PORT}`));
