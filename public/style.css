@@ -1,0 +1,7 @@
+body { background-color: #161a1f; }
+h1 {color: #f8f8f8; }
+h2 {color: #b1b1b9; }
+div {display: flex;
+    flex-direction: column;
+    align-items: center;}
+audio {min-width: -webkit-fill-available;}
