@@ -1,10 +1,11 @@
 body { background-color: #161a1f; }
 h1 {color: #f8f8f8; }
 h2 {color: #b1b1b9; }
-div {display: flex;
+.box {display: flex;
     flex-direction: column;
     align-items: center;}
 audio {min-width: -webkit-fill-available;}
 img { width: 4em;
     align-self: flex-start;
-    margin-left: 2em; }
+    margin-left: 2em; } 
+
