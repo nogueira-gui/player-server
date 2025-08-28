@@ -4,13 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "health": "curl -sS http://localhost:3000/health | cat"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.15.4",
+    "express": "^4.21.2",
     "firebase": "^9.9.4"
-  }
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "type": "module"
 }
